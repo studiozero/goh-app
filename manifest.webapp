@@ -1,0 +1,14 @@
+{
+  "name": "Get Over Here",
+  "description": "Get the attention of your friends and more with the annoying app",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/images/icon-512.png",
+    "128": "/imgage/ios/icon-128.png"
+  },
+  "developer": {
+    "name": "Shaun Dunne",
+    "url": "http://www.shaundunne.com"
+  },
+  "default_locale": "en"
+}

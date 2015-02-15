@@ -1,0 +1,133 @@
+<html manifest="getoverhere.appcache">
+<head>
+    <title>Get Over Here</title>
+    
+    <link rel="manifest" href="../manifest.json">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="icon" sizes="192x192" href="images/icon-xxxhdpi/icon.png">
+
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/ios/icon-180.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/ios/icon-152.png">
+    <!-- For iPad with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ios/icon-72@2x.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/ios/icon-120.png">
+    <!-- For iPhone with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ios/icon@2x.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/ios/icon-76.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ios/icon-72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/ios/icon.png"><!-- 57×57px -->
+  
+
+<style>
+
+body{
+  background: #2ecc71;
+}
+	
+body.flash{
+
+  -ms-animation-direction: normal;
+  -ms-animation-duration: 0.2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-name: flash;
+  -ms-animation-timing-function: ease;
+
+  -moz-animation-direction: normal;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: flash;
+  -moz-animation-timing-function: ease;
+
+  -o-animation-direction: normal;
+  -o-animation-duration: 0.2s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-name: flash;
+  -o-animation-timing-function: ease;
+
+  
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: flash;
+  -webkit-animation-timing-function: ease;
+
+  animation-direction: normal;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-name: flash;
+  animation-timing-function: ease;
+
+}
+
+@-o-keyframes 'flash'{
+  0% { background: #2ecc71; }
+  50% { background: none }
+  100% { background: #2ecc71; }
+}
+
+@-ms-keyframes 'flash'{
+  0% { background: #2ecc71; }
+  50% { background: none }
+  100% { background: #2ecc71; }
+}
+
+@-moz-keyframes 'flash'{
+  0% { background: #2ecc71; }
+  50% { background: none }
+  100% { background: #2ecc71; }
+}
+
+@-webkit-keyframes 'flash'{
+  0% { background: #2ecc71; }
+  50% { background: none }
+  100% { background: #2ecc71; }
+}
+
+@keyframes 'flash'{
+  0% { background: #2ecc71; }
+  50% { background: none }
+  100% { background: #2ecc71; }
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+<script>
+
+    (function(){
+
+      var body = document.body;
+
+      body.addEventListener("touchend", getOverHere, false);
+      body.addEventListener("click", getOverHere, false);
+
+      function getOverHere(ev){
+        ev.preventDefault();
+        body.classList.toggle("flash");
+   
+      }
+
+
+
+    }()); // Funktion call() on the inside because Crockford says it looks like balls on the outside
+
+  </script>
+  
+</body>
+</html>
