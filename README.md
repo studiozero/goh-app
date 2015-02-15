@@ -1,6 +1,6 @@
 ##Get Over Here
 
-<img align="center" height="300" src="public/app/images/icon-512.png">
+<img align="center" height="300" src="images/icon-512.png">
 
 Inspired by the 'Dumb App' Lookfor - http://www.lookfor.cl/ - This is Get Over Here, a web app ready for you to use to help your friends find where you is at. Just open the app and tap/click the screen and stick your beacon of light, hope and possibly an epilepsy enducing flicker into the air.
 
